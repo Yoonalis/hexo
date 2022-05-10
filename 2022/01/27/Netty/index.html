@@ -7,32 +7,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/blog/img/favicon.png">
-  <link rel="icon" href="/blog/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/Yoonalis/hexo.git/img/favicon.png">
+  <link rel="icon" href="/Yoonalis/hexo.git/img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Cherish">
+  <meta name="author" content="Azure">
   <meta name="keywords" content="">
   
     <meta name="description" content="Netty">
 <meta property="og:type" content="article">
 <meta property="og:title" content="IO模型、Netty">
-<meta property="og:url" content="https://cherish-merry.github.io/blog/2022/01/27/Netty/index.html">
-<meta property="og:site_name" content="Cherish&#39;s blog">
+<meta property="og:url" content="https://github.com/Yoonalis/hexo.git/2022/01/27/Netty/index.html">
+<meta property="og:site_name" content="Azure&#39;s blog">
 <meta property="og:description" content="Netty">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cherish-merry.github.io/blog/img/Netty.png">
+<meta property="og:image" content="https://github.com/Yoonalis/hexo.git/img/Netty.png">
 <meta property="article:published_time" content="2022-01-27T06:30:00.000Z">
-<meta property="article:modified_time" content="2022-03-02T01:19:51.857Z">
-<meta property="article:author" content="Cherish">
+<meta property="article:modified_time" content="2022-03-02T01:19:51.000Z">
+<meta property="article:author" content="Azure">
 <meta property="article:tag" content="Nio、Netty、多路复用">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cherish-merry.github.io/blog/img/Netty.png">
+<meta name="twitter:image" content="https://github.com/Yoonalis/hexo.git/img/Netty.png">
   
   
-  <title>IO模型、Netty - Cherish&#39;s blog</title>
+  <title>IO模型、Netty - Azure&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -62,17 +62,17 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/blog/css/main.css" />
+<link  rel="stylesheet" href="/Yoonalis/hexo.git/css/main.css" />
 
 <!-- 自定义样式保持在最底部 -->
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"cherish-merry.github.io","root":"/blog/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml"};
+    var CONFIG = {"hostname":"github.com","root":"/Yoonalis/hexo.git/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/Yoonalis/hexo.git/local-search.xml"};
   </script>
-  <script  src="/blog/js/utils.js" ></script>
-  <script  src="/blog/js/color-schema.js" ></script>
+  <script  src="/Yoonalis/hexo.git/js/utils.js" ></script>
+  <script  src="/Yoonalis/hexo.git/js/color-schema.js" ></script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
@@ -80,7 +80,7 @@
   <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/blog/">
+    <a class="navbar-brand" href="/Yoonalis/hexo.git/">
       <strong>Cherish</strong>
     </a>
 
@@ -99,7 +99,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/">
                 <i class="iconfont icon-home-fill"></i>
                 Home
               </a>
@@ -111,7 +111,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/archives/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 Archives
               </a>
@@ -123,7 +123,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/categories/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/categories/">
                 <i class="iconfont icon-category-fill"></i>
                 Categories
               </a>
@@ -135,7 +135,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/tags/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 Tags
               </a>
@@ -147,7 +147,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/about/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/about/">
                 <i class="iconfont icon-user-fill"></i>
                 About
               </a>
@@ -159,7 +159,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/links/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/links/">
                 <i class="iconfont icon-link-fill"></i>
                 Links
               </a>
@@ -185,7 +185,7 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/blog/img/default.png') no-repeat center center;
+         style="background: url('/Yoonalis/hexo.git/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -262,25 +262,25 @@
 <li>等待数据阶段</li>
 <li>复制数据阶段</li>
 </ul>
-<p><img src="/blog/2022/01/27/Netty/0033.png" srcset="/blog/img/loading.gif" lazyload></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Netty/0033.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload></p>
 <ul>
 <li><p>阻塞 IO</p>
-<p><img src="/blog/2022/01/27/Netty/0039.png" srcset="/blog/img/loading.gif" lazyload></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Netty/0039.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload></p>
 </li>
 <li><p>非阻塞  IO</p>
-<p><img src="/blog/2022/01/27/Netty/0035.png" srcset="/blog/img/loading.gif" lazyload></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Netty/0035.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload></p>
 </li>
 <li><p>多路复用</p>
-<p><img src="/blog/2022/01/27/Netty/0038.png" srcset="/blog/img/loading.gif" lazyload></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Netty/0038.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload></p>
 </li>
 <li><p>信号驱动</p>
 </li>
 <li><p>异步 IO</p>
-<p><img src="/blog/2022/01/27/Netty/0037.png" srcset="/blog/img/loading.gif" lazyload></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Netty/0037.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload></p>
 </li>
 <li><p>阻塞 IO vs 多路复用</p>
-<p><img src="/blog/2022/01/27/Netty/0034.png" srcset="/blog/img/loading.gif" lazyload></p>
-<p><img src="/blog/2022/01/27/Netty/0036.png" srcset="/blog/img/loading.gif" lazyload></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Netty/0034.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Netty/0036.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload></p>
 </li>
 </ul>
 <h2 id="2、多路复用之select、poll、epoll详解"><a href="#2、多路复用之select、poll、epoll详解" class="headerlink" title="2、多路复用之select、poll、epoll详解"></a>2、多路复用之select、poll、epoll详解</h2><p>select，poll，epoll都是IO多路复用的机制。I/O多路复用就是通过一种机制，一个进程可以监视多个描述符，一旦某个描述符就绪（一般是读就绪或者写就绪），能够通知程序进行相应的读写操作。但select，poll，epoll本质上都是同步I/O，因为他们都需要在读写事件就绪后自己负责进行读写，也就是说这个读写过程是阻塞的，而异步I/O则无需自己负责进行读写，异步I/O的实现会负责把数据从内核拷贝到用户空间。</p>
@@ -320,7 +320,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java">File f = <span class="hljs-keyword">new</span> File(<span class="hljs-string">&quot;helloword/data.txt&quot;</span>);<br>RandomAccessFile file = <span class="hljs-keyword">new</span> RandomAccessFile(file, <span class="hljs-string">&quot;r&quot;</span>);<br><br><span class="hljs-keyword">byte</span>[] buf = <span class="hljs-keyword">new</span> <span class="hljs-keyword">byte</span>[(<span class="hljs-keyword">int</span>)f.length()];<br>file.read(buf);<br><br>Socket socket = ...;<br>socket.getOutputStream().write(buf);<br></code></pre></td></tr></table></figure>
 
 <p>内部工作流程是这样的：</p>
-<p><img src="/blog/2022/01/27/Netty/0024.png" srcset="/blog/img/loading.gif" lazyload></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Netty/0024.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload></p>
 <ol>
 <li><p>java 本身并不具备 IO 读写能力，因此 read 方法调用后，要从 java 程序的<strong>用户态</strong>切换至<strong>内核态</strong>，去调用操作系统（Kernel）的读能力，将数据读入<strong>内核缓冲区</strong>。这期间用户线程阻塞，操作系统使用 DMA（Direct Memory Access）来实现文件读，其间也不会使用 cpu</p>
 <blockquote>
@@ -344,7 +344,7 @@
 <li>ByteBuffer.allocate(10)  HeapByteBuffer 使用的还是 java 内存</li>
 <li>ByteBuffer.allocateDirect(10)  DirectByteBuffer 使用的是操作系统内存</li>
 </ul>
-<p><img src="/blog/2022/01/27/Netty/0025.png" srcset="/blog/img/loading.gif" lazyload></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Netty/0025.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload></p>
 <p>大部分步骤与优化前相同，不再赘述。唯有一点：java 可以使用 DirectByteBuf 将堆外内存映射到 jvm 内存中来直接访问使用</p>
 <ul>
 <li>这块内存不受 jvm 垃圾回收的影响，因此内存地址固定，有助于 IO 读写</li>
@@ -356,7 +356,7 @@
 <li>减少了一次数据拷贝，用户态与内核态的切换次数没有减少</li>
 </ul>
 <p>进一步优化（底层采用了 linux 2.1 后提供的 sendFile 方法），java 中对应着两个 channel 调用 transferTo/transferFrom 方法拷贝数据</p>
-<p><img src="/blog/2022/01/27/Netty/0026.png" srcset="/blog/img/loading.gif" lazyload></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Netty/0026.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload></p>
 <ol>
 <li>java 调用 transferTo 方法后，要从 java 程序的<strong>用户态</strong>切换至<strong>内核态</strong>，使用 DMA将数据读入<strong>内核缓冲区</strong>，不会使用 cpu</li>
 <li>数据从<strong>内核缓冲区</strong>传输到 <strong>socket 缓冲区</strong>，cpu 会参与拷贝</li>
@@ -368,7 +368,7 @@
 <li>数据拷贝了 3 次</li>
 </ul>
 <p>进一步优化（linux 2.4）</p>
-<p><img src="/blog/2022/01/27/Netty/0027.png" srcset="/blog/img/loading.gif" lazyload></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Netty/0027.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload></p>
 <ol>
 <li>java 调用 transferTo 方法后，要从 java 程序的<strong>用户态</strong>切换至<strong>内核态</strong>，使用 DMA将数据读入<strong>内核缓冲区</strong>，不会使用 cpu</li>
 <li>只会将一些 offset 和 length 信息拷入 <strong>socket 缓冲区</strong>，几乎无消耗</li>
@@ -428,7 +428,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/blog/categories/%E5%90%8E%E7%AB%AF%E3%80%81Netty/">后端、Netty</a>
+                      <a class="hover-with-bg" href="/Yoonalis/hexo.git/categories/%E5%90%8E%E7%AB%AF%E3%80%81Netty/">后端、Netty</a>
                     
                   </div>
                 
@@ -436,7 +436,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/blog/tags/Nio%E3%80%81Netty%E3%80%81%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/">Nio、Netty、多路复用</a>
+                      <a class="hover-with-bg" href="/Yoonalis/hexo.git/tags/Nio%E3%80%81Netty%E3%80%81%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8/">Nio、Netty、多路复用</a>
                     
                   </div>
                 
@@ -453,9 +453,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/blog/2022/01/27/Jvm/">
+                      <a href="/Yoonalis/hexo.git/2022/01/27/Mysql/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">JVM</span>
+                        <span class="hidden-mobile">Mysql</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -463,8 +463,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/blog/2022/01/27/Mysql/">
-                        <span class="hidden-mobile">Mysql</span>
+                      <a href="/Yoonalis/hexo.git/2022/01/27/redis/">
+                        <span class="hidden-mobile">Redis</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -581,18 +581,18 @@
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
 <script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/blog/js/events.js" ></script>
-<script  src="/blog/js/plugins.js" ></script>
+<script  src="/Yoonalis/hexo.git/js/events.js" ></script>
+<script  src="/Yoonalis/hexo.git/js/plugins.js" ></script>
 
 <!-- Plugins -->
 
 
-  <script  src="/blog/js/local-search.js" ></script>
+  <script  src="/Yoonalis/hexo.git/js/local-search.js" ></script>
 
 
 
   
-    <script  src="/blog/js/img-lazyload.js" ></script>
+    <script  src="/Yoonalis/hexo.git/js/img-lazyload.js" ></script>
   
 
 
@@ -647,7 +647,7 @@
 
 
 <!-- 主题的启动项 保持在最底部 -->
-<script  src="/blog/js/boot.js" ></script>
+<script  src="/Yoonalis/hexo.git/js/boot.js" ></script>
 
 
 </body>

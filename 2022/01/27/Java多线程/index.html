@@ -7,32 +7,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/blog/img/favicon.png">
-  <link rel="icon" href="/blog/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/Yoonalis/hexo.git/img/favicon.png">
+  <link rel="icon" href="/Yoonalis/hexo.git/img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Cherish">
+  <meta name="author" content="Azure">
   <meta name="keywords" content="">
   
     <meta name="description" content="Java并发">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java并发">
-<meta property="og:url" content="https://cherish-merry.github.io/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/index.html">
-<meta property="og:site_name" content="Cherish&#39;s blog">
+<meta property="og:url" content="https://github.com/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/index.html">
+<meta property="og:site_name" content="Azure&#39;s blog">
 <meta property="og:description" content="Java并发">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cherish-merry.github.io/blog/img/Java%E5%B9%B6%E5%8F%91.png">
+<meta property="og:image" content="https://github.com/Yoonalis/hexo.git/img/Java%E5%B9%B6%E5%8F%91.png">
 <meta property="article:published_time" content="2022-01-27T06:30:00.000Z">
-<meta property="article:modified_time" content="2022-03-07T07:02:33.681Z">
-<meta property="article:author" content="Cherish">
+<meta property="article:modified_time" content="2022-03-07T07:02:33.000Z">
+<meta property="article:author" content="Azure">
 <meta property="article:tag" content="并发、多线程、Java">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cherish-merry.github.io/blog/img/Java%E5%B9%B6%E5%8F%91.png">
+<meta name="twitter:image" content="https://github.com/Yoonalis/hexo.git/img/Java%E5%B9%B6%E5%8F%91.png">
   
   
-  <title>Java并发 - Cherish&#39;s blog</title>
+  <title>Java并发 - Azure&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -62,17 +62,17 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/blog/css/main.css" />
+<link  rel="stylesheet" href="/Yoonalis/hexo.git/css/main.css" />
 
 <!-- 自定义样式保持在最底部 -->
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"cherish-merry.github.io","root":"/blog/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml"};
+    var CONFIG = {"hostname":"github.com","root":"/Yoonalis/hexo.git/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/Yoonalis/hexo.git/local-search.xml"};
   </script>
-  <script  src="/blog/js/utils.js" ></script>
-  <script  src="/blog/js/color-schema.js" ></script>
+  <script  src="/Yoonalis/hexo.git/js/utils.js" ></script>
+  <script  src="/Yoonalis/hexo.git/js/color-schema.js" ></script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
@@ -80,7 +80,7 @@
   <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/blog/">
+    <a class="navbar-brand" href="/Yoonalis/hexo.git/">
       <strong>Cherish</strong>
     </a>
 
@@ -99,7 +99,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/">
                 <i class="iconfont icon-home-fill"></i>
                 Home
               </a>
@@ -111,7 +111,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/archives/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 Archives
               </a>
@@ -123,7 +123,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/categories/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/categories/">
                 <i class="iconfont icon-category-fill"></i>
                 Categories
               </a>
@@ -135,7 +135,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/tags/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 Tags
               </a>
@@ -147,7 +147,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/about/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/about/">
                 <i class="iconfont icon-user-fill"></i>
                 About
               </a>
@@ -159,7 +159,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/links/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/links/">
                 <i class="iconfont icon-link-fill"></i>
                 Links
               </a>
@@ -185,7 +185,7 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/blog/img/default.png') no-repeat center center;
+         style="background: url('/Yoonalis/hexo.git/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -287,10 +287,10 @@
 <td>会清除 打断标记</td>
 </tr>
 </tbody></table>
-<h3 id="2-线程状态"><a href="#2-线程状态" class="headerlink" title="2 线程状态"></a>2 线程状态</h3><p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/thread-convert.png" srcset="/blog/img/loading.gif" lazyload alt="thread-convert"></p>
+<h3 id="2-线程状态"><a href="#2-线程状态" class="headerlink" title="2 线程状态"></a>2 线程状态</h3><p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/thread-convert.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="thread-convert"></p>
 <h3 id="3-线程池"><a href="#3-线程池" class="headerlink" title="3 线程池"></a>3 线程池</h3><h4 id="3-1-自定义线程池"><a href="#3-1-自定义线程池" class="headerlink" title="3.1 自定义线程池"></a>3.1 自定义线程池</h4><figure class="highlight java"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></div></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ThreadPool</span> </span>&#123;<br>    <span class="hljs-keyword">int</span> coreSize;<br>    <span class="hljs-keyword">int</span> queueCapacity;<br>    BlockingDeque&lt;Runnable&gt; taskQueue;<br>    TimeUnit timeUnit;<br>    <span class="hljs-keyword">long</span> timeout;<br>    RejectPolicy rejectPolicy;<br>    <span class="hljs-keyword">final</span> Set&lt;Worker&gt; workers = <span class="hljs-keyword">new</span> HashSet&lt;&gt;();<br><br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ThreadPool</span><span class="hljs-params">(<span class="hljs-keyword">int</span> coreSize, <span class="hljs-keyword">int</span> queueCapacity, BlockingDeque&lt;Runnable&gt; blockingDeque, TimeUnit timeUnit, <span class="hljs-keyword">long</span> timeout, RejectPolicy rejectPolicy)</span> </span>&#123;<br>        <span class="hljs-keyword">this</span>.coreSize = coreSize;<br>        <span class="hljs-keyword">this</span>.queueCapacity = queueCapacity;<br>        <span class="hljs-keyword">this</span>.taskQueue = blockingDeque;<br>        <span class="hljs-keyword">this</span>.timeUnit = timeUnit;<br>        <span class="hljs-keyword">this</span>.timeout = timeout;<br>        <span class="hljs-keyword">this</span>.rejectPolicy = rejectPolicy;<br>    &#125;<br><br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">execute</span><span class="hljs-params">(Runnable task)</span> </span>&#123;<br>        <span class="hljs-comment">// 当任务数没有超过 coreSize 时，直接交给 worker 对象执行</span><br>        <span class="hljs-comment">// 如果任务数超过 coreSize 时，加入任务队列暂存</span><br>        <span class="hljs-keyword">synchronized</span> (workers) &#123;<br>            <span class="hljs-keyword">if</span> (workers.size() &lt; coreSize) &#123;<br>                Worker worker = <span class="hljs-keyword">new</span> Worker(task);<br>                workers.add(worker);<br>                worker.start();<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                <span class="hljs-comment">// 1) 死等</span><br>                <span class="hljs-comment">// 2) 带超时等待</span><br>                <span class="hljs-comment">// 3) 让调用者放弃任务执行</span><br>                <span class="hljs-comment">// 4) 让调用者抛出异常</span><br>                <span class="hljs-comment">// 5) 让调用者自己执行任务</span><br>                <span class="hljs-keyword">try</span> &#123;<br>                    taskQueue.put(task);<br>                &#125; <span class="hljs-keyword">catch</span> (InterruptedException e) &#123;<br>                    e.printStackTrace();<br>                &#125;<br>            &#125;<br>        &#125;<br>    &#125;<br><br>    <span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">RejectPolicy</span> </span>&#123;<br><br>    &#125;<br><br><br>    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Worker</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>&#123;<br>        Runnable task;<br><br>        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Worker</span><span class="hljs-params">(Runnable task)</span> </span>&#123;<br>            <span class="hljs-keyword">this</span>.task = task;<br>        &#125;<br><br>        <span class="hljs-meta">@Override</span><br>        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>&#123;<br>            <span class="hljs-keyword">try</span> &#123;<br>                <span class="hljs-keyword">while</span> (task != <span class="hljs-keyword">null</span> || (task = taskQueue.poll(timeout, timeUnit)) != <span class="hljs-keyword">null</span>) &#123;<br>                    task.run();<br>                &#125;<br>            &#125; <span class="hljs-keyword">catch</span> (InterruptedException e) &#123;<br>                e.printStackTrace();<br>            &#125; <span class="hljs-keyword">finally</span> &#123;<br>                task = <span class="hljs-keyword">null</span>;<br>            &#125;<br>            <span class="hljs-keyword">synchronized</span> (workers) &#123;<br>                workers.remove(<span class="hljs-keyword">this</span>);<br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h4 id="3-2-层次结构"><a href="#3-2-层次结构" class="headerlink" title="3.2 层次结构"></a>3.2 层次结构</h4><p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/ThreadPool.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220307090008765"></p>
+<h4 id="3-2-层次结构"><a href="#3-2-层次结构" class="headerlink" title="3.2 层次结构"></a>3.2 层次结构</h4><p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/ThreadPool.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220307090008765"></p>
 <h4 id="3-3-参数含义"><a href="#3-3-参数含义" class="headerlink" title="3.3 参数含义"></a>3.3 参数含义</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">int</span> corePoolSize,  核心线程数<br><span class="hljs-keyword">int</span> maximumPoolSize, 最大线程数<br><span class="hljs-keyword">long</span> keepAliveTime, 工作线程存活时间<br>TimeUnit unit, 时间的单位<br>BlockingQueue&lt;Runnable&gt; workQueue, 阻塞队列<br>ThreadFactory threadFactory, 线程工程<br>RejectedExecutionHandler handler 拒绝策略（直接抛弃、抛异常、丢弃最早进入阻塞队列的、由调用者线程执行）<br></code></pre></td></tr></table></figure>
 
 <ol>
@@ -310,7 +310,7 @@
 <li>interrupt打断正在执行中的任务</li>
 </ol>
 <h3 id="4-JMM-内存模型"><a href="#4-JMM-内存模型" class="headerlink" title="4 JMM 内存模型"></a>4 JMM 内存模型</h3><p>java内存模型规定所有变量保存在主内存中，每个线程有自己的工作内存。线程的工作内存中保存了该线程使用到的变量的主内存拷贝，线程对变量的所有操作都必须在工作内存中进行，而不能直接读写主内存中的变量。不同的线程之间无法直接访问对方的工作内存，需通过主内存才能进行变量的传递。</p>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/jmm.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220304163320142"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/jmm.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220304163320142"></p>
 <h3 id="5-可见性、有序性、原子性、volatile"><a href="#5-可见性、有序性、原子性、volatile" class="headerlink" title="5 可见性、有序性、原子性、volatile"></a>5 可见性、有序性、原子性、volatile</h3><h4 id="可见性"><a href="#可见性" class="headerlink" title="可见性"></a><strong>可见性</strong></h4><p>可见性指的是当一个线程修改了共享变量后，其他线程能够立即得知这个修改，volatile可以保证可见性</p>
 <h4 id="有序性"><a href="#有序性" class="headerlink" title="有序性"></a><strong>有序性</strong></h4><p>有序性指的是程序按照代码的先后顺序执行</p>
 <p> 为了性能优化，编译器和处理器会可能进行指令重排序，有时候会改变程序中语句的先后顺序</p>
@@ -333,11 +333,11 @@
 <p>volatile 的底层实现原理是内存屏障，<code>Memory Barrier``（Memory Fence）</code> </p>
 <p>对 volatile 变量的写指令后会加入写屏障 </p>
 <p>对 volatile 变量的读指令前会加入读屏障</p>
-<h3 id="6-对象头"><a href="#6-对象头" class="headerlink" title="6 对象头"></a>6 对象头</h3><p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/head2.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220303215531080"></p>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/head.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220303215436254"></p>
+<h3 id="6-对象头"><a href="#6-对象头" class="headerlink" title="6 对象头"></a>6 对象头</h3><p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/head2.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220303215531080"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/head.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220303215436254"></p>
 <h3 id="7-synchronized-原理"><a href="#7-synchronized-原理" class="headerlink" title="7 synchronized 原理"></a>7 synchronized 原理</h3><h4 id="7-1-monitor-原理"><a href="#7-1-monitor-原理" class="headerlink" title="7.1 monitor 原理"></a>7.1 monitor 原理</h4><p>每个 <code>Java</code> 对象都可以关联一个 <code>Monitor</code> 对象，如果使用 <code>synchronized</code> 给对象上锁（重量级）之后，该对象头的 <code>Mark Word</code> 中就被设置指向 <code>Monitor</code> 对象的指针</p>
 <p><code>Monitor</code> 结构</p>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/monitor.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220304101553600"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/monitor.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220304101553600"></p>
 <p>刚开始 <code>Monitor</code> 中 <code>Owner</code> 为 <code>null</code> </p>
 <p>当 <code>Thread-2</code> 执行 <code>synchronized(obj)</code> 就会将 <code>Monitor</code> 的所有者 <code>Owner</code> 置为 <code>Thread-2</code>，<code>Monitor</code>中只能有一 个 <code>Owner</code> </p>
 <p>在<code>Thread-2</code> 上锁的过程中，如果 <code>Thread-3</code>，<code>Thread-4</code>，<code>Thread-5</code> 也来执行 <code>synchronized(obj)</code>，就会进入 <code>EntryList</code> <code>BLOCKED</code> </p>
@@ -345,14 +345,14 @@
 <p>图中 <code>WaitSet</code> 中的 <code>Thread-0</code>，<code>Thread-1</code> 是之前获得过锁，但条件不满足进入 <code>WAITING</code> 状态的线程，后面讲 <code>wait-notify</code> 时会分析</p>
 <h4 id="7-2-轻量级锁"><a href="#7-2-轻量级锁" class="headerlink" title="7.2 轻量级锁"></a>7.2 轻量级锁</h4><p>如果一个对象虽然有多线程要加锁，但加锁的时间是错开的（也就是没有竞争），那么可以 使用轻量级锁来优化。 </p>
 <p>在线程的栈桢中创建锁记录（<code>Lock Record</code>）对象，让锁记录中 <code>Object reference</code> 指向锁对象，并尝试用 cas 替换 <code>Object</code> 的 <code>Mark Word</code>，将<code>Mark Word</code> 的值存 入锁记录</p>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/lock-cas.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220304122554620"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/lock-cas.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220304122554620"></p>
 <p><strong>如果 cas 替换成功</strong></p>
 <p>对象头中存储了锁记录地址和状态 00 ，表示由该线程给对象加锁，这时图示如下</p>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/lock-cas2.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220304122859602"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/lock-cas2.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220304122859602"></p>
 <p><strong>如果 cas 失败，有两种情况</strong> </p>
 <p>如果是其它线程已经持有了该 <code>Object</code> 的轻量级锁，这时表明有竞争，进入锁膨胀过程</p>
 <p>如果是自己执行了 synchronized 锁重入，那么再添加一条 <code>Lock Record</code> 作为重入的计数</p>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/lock-cas3.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220304123050785"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/lock-cas3.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220304123050785"></p>
 <p><strong>当退出 synchronized 代码块（解锁时）</strong></p>
 <p>如果有取值为 <code>null</code> 的锁记录，表示有重入，这时重置锁记录，表示重 入计数减一</p>
 <h4 id="7-3-偏向锁"><a href="#7-3-偏向锁" class="headerlink" title="7.3 偏向锁"></a>7.3 偏向锁</h4><p>如果开启了偏向锁（默认开启），那么对象创建后，<code>markword</code> 最后 3 位为 101，否则为001</p>
@@ -397,14 +397,14 @@
 
 
 <h3 id="9-park-unPark-原理"><a href="#9-park-unPark-原理" class="headerlink" title="9 park unPark 原理"></a>9 park unPark 原理</h3><p>每个线程都有自己的一个 Parker 对象，由三部分组成 <code>_counter</code> ， <code>_cond</code> 和 <code>_mutex</code></p>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/park.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220304161105092"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/park.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220304161105092"></p>
 <ol>
 <li>当前线程调用 Unsafe.park() 方法 </li>
 <li>检查 _counter ，本情况为 0，这时，获得 _mutex 互斥锁 </li>
 <li>线程进入 _cond 条件变量阻塞 </li>
 <li>设置 _counter = 0</li>
 </ol>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/unpark.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220304161219021"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/unpark.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220304161219021"></p>
 <ol>
 <li>调用 Unsafe.unpark(Thread_0) 方法，设置 _counter 为 1 </li>
 <li>唤醒 _cond 条件变量中的 Thread_0 </li>
@@ -419,15 +419,15 @@
 <p><code>state</code> 表示资源的状态（分独占模式和共享模式），子类需要定义如何维护这个状态，控制如何获取锁和释放锁</p>
 <p><strong><code>CLH</code>队列</strong></p>
 <p>基于 FIFO的等待队列，类似于 <code>Monitor</code> 的 <code>EntryList</code></p>
-<p> <img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/CLH.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220305141401397"></p>
+<p> <img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/CLH.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220305141401397"></p>
 <p><strong><code>Condition</code>队列</strong></p>
 <p>条件变量来实现等待、唤醒机制，支持多个条件变量，类似于 <code>Monitor</code> 的 <code>WaitSet</code></p>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/condition-object.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220305154000290"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/condition-object.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220305154000290"></p>
 <h4 id="10-3-ReentrantLock-非公平锁-原理"><a href="#10-3-ReentrantLock-非公平锁-原理" class="headerlink" title="10.3 ReentrantLock(非公平锁) 原理"></a>10.3 ReentrantLock(非公平锁) 原理</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ReentrantLock</span><span class="hljs-params">()</span> </span>&#123;<br>    sync = <span class="hljs-keyword">new</span> NonfairSync();<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p><code>ReentrantLock</code>有公平和非公平实现，默认使用非公平实现</p>
 <p><strong><code>lock()</code>流程</strong></p>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/lock.png" srcset="/blog/img/loading.gif" lazyload alt="未命名文件"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/lock.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="未命名文件"></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">final</span> <span class="hljs-keyword">void</span> <span class="hljs-title">lock</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (compareAndSetState(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>))<br>        setExclusiveOwnerThread(Thread.currentThread());<br>    <span class="hljs-keyword">else</span><br>        acquire(<span class="hljs-number">1</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">nonfairTryAcquire</span><span class="hljs-params">(<span class="hljs-keyword">int</span> acquires)</span> </span>&#123;<br>    <span class="hljs-keyword">final</span> Thread current = Thread.currentThread();<br>    <span class="hljs-keyword">int</span> c = getState();<br>    <span class="hljs-keyword">if</span> (c == <span class="hljs-number">0</span>) &#123;<br>        <span class="hljs-keyword">if</span> (compareAndSetState(<span class="hljs-number">0</span>, acquires)) &#123;<br>            setExclusiveOwnerThread(current);<br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (current == getExclusiveOwnerThread()) &#123;<br>        <span class="hljs-keyword">int</span> nextc = c + acquires;<br>        <span class="hljs-keyword">if</span> (nextc &lt; <span class="hljs-number">0</span>) <span class="hljs-comment">// overflow</span><br>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">&quot;Maximum lock count exceeded&quot;</span>);<br>        setState(nextc);<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
@@ -439,7 +439,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">shouldParkAfterFailedAcquire</span><span class="hljs-params">(Node pred, Node node)</span> </span>&#123;<br>    <span class="hljs-keyword">int</span> ws = pred.waitStatus;<br>    <span class="hljs-keyword">if</span> (ws == Node.SIGNAL)<br>        <span class="hljs-comment">/*</span><br><span class="hljs-comment">         * This node has already set status asking a release</span><br><span class="hljs-comment">         * to signal it, so it can safely park.</span><br><span class="hljs-comment">         */</span><br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;<br>    <span class="hljs-keyword">if</span> (ws &gt; <span class="hljs-number">0</span>) &#123;<br>        <span class="hljs-comment">/*</span><br><span class="hljs-comment">         * Predecessor was cancelled. Skip over predecessors and</span><br><span class="hljs-comment">         * indicate retry.</span><br><span class="hljs-comment">         */</span><br>        <span class="hljs-keyword">do</span> &#123;<br>            node.prev = pred = pred.prev;<br>        &#125; <span class="hljs-keyword">while</span> (pred.waitStatus &gt; <span class="hljs-number">0</span>);<br>        pred.next = node;<br>    &#125; <span class="hljs-keyword">else</span> &#123;<br>        <span class="hljs-comment">/*</span><br><span class="hljs-comment">         * waitStatus must be 0 or PROPAGATE.  Indicate that we</span><br><span class="hljs-comment">         * need a signal, but don&#x27;t park yet.  Caller will need to</span><br><span class="hljs-comment">         * retry to make sure it cannot acquire before parking.</span><br><span class="hljs-comment">         */</span><br>        compareAndSetWaitStatus(pred, ws, Node.SIGNAL);<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p><strong><code>release()</code>流程</strong></p>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/release.png" srcset="/blog/img/loading.gif" lazyload alt="未命名文件-2"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/release.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="未命名文件-2"></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">release</span><span class="hljs-params">(<span class="hljs-keyword">int</span> arg)</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (tryRelease(arg)) &#123;<br>        Node h = head;<br>        <span class="hljs-keyword">if</span> (h != <span class="hljs-keyword">null</span> &amp;&amp; h.waitStatus != <span class="hljs-number">0</span>)<br>            unparkSuccessor(h);<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">tryRelease</span><span class="hljs-params">(<span class="hljs-keyword">int</span> releases)</span> </span>&#123;<br>    <span class="hljs-keyword">int</span> c = getState() - releases;<br>    <span class="hljs-keyword">if</span> (Thread.currentThread() != getExclusiveOwnerThread())<br>        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IllegalMonitorStateException();<br>    <span class="hljs-keyword">boolean</span> free = <span class="hljs-keyword">false</span>;<br>    <span class="hljs-keyword">if</span> (c == <span class="hljs-number">0</span>) &#123;<br>        free = <span class="hljs-keyword">true</span>;<br>        setExclusiveOwnerThread(<span class="hljs-keyword">null</span>);<br>    &#125;<br>    setState(c);<br>    <span class="hljs-keyword">return</span> free;<br>&#125;<br></code></pre></td></tr></table></figure>
@@ -447,11 +447,11 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">unparkSuccessor</span><span class="hljs-params">(Node node)</span> </span>&#123;<br>    <span class="hljs-comment">/*</span><br><span class="hljs-comment">     * If status is negative (i.e., possibly needing signal) try</span><br><span class="hljs-comment">     * to clear in anticipation of signalling.  It is OK if this</span><br><span class="hljs-comment">     * fails or if status is changed by waiting thread.</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-keyword">int</span> ws = node.waitStatus;<br>    <span class="hljs-keyword">if</span> (ws &lt; <span class="hljs-number">0</span>)<br>        compareAndSetWaitStatus(node, ws, <span class="hljs-number">0</span>);<br><br>    <span class="hljs-comment">/*</span><br><span class="hljs-comment">     * Thread to unpark is held in successor, which is normally</span><br><span class="hljs-comment">     * just the next node.  But if cancelled or apparently null,</span><br><span class="hljs-comment">     * traverse backwards from tail to find the actual</span><br><span class="hljs-comment">     * non-cancelled successor.</span><br><span class="hljs-comment">     */</span><br>    Node s = node.next;<br>    <span class="hljs-keyword">if</span> (s == <span class="hljs-keyword">null</span> || s.waitStatus &gt; <span class="hljs-number">0</span>) &#123;<br>        s = <span class="hljs-keyword">null</span>;<br>        <span class="hljs-keyword">for</span> (Node t = tail; t != <span class="hljs-keyword">null</span> &amp;&amp; t != node; t = t.prev)<br>            <span class="hljs-keyword">if</span> (t.waitStatus &lt;= <span class="hljs-number">0</span>)<br>                s = t;<br>    &#125;<br>    <span class="hljs-keyword">if</span> (s != <span class="hljs-keyword">null</span>)<br>        LockSupport.unpark(s.thread);<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p><strong><code>await()</code>流程</strong></p>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/await.png" srcset="/blog/img/loading.gif" lazyload alt="未命名文件-3"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/await.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="未命名文件-3"></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">void</span> <span class="hljs-title">await</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> InterruptedException </span>&#123;<br>    <span class="hljs-keyword">if</span> (Thread.interrupted())<br>        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> InterruptedException();<br>    Node node = addConditionWaiter();<br>    <span class="hljs-keyword">int</span> savedState = fullyRelease(node);<br>    <span class="hljs-keyword">int</span> interruptMode = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">while</span> (!isOnSyncQueue(node)) &#123;<br>        LockSupport.park(<span class="hljs-keyword">this</span>);<br>        <span class="hljs-keyword">if</span> ((interruptMode = checkInterruptWhileWaiting(node)) != <span class="hljs-number">0</span>)<br>            <span class="hljs-keyword">break</span>;<br>    &#125;<br>    <span class="hljs-keyword">if</span> (acquireQueued(node, savedState) &amp;&amp; interruptMode != THROW_IE)<br>        interruptMode = REINTERRUPT;<br>    <span class="hljs-keyword">if</span> (node.nextWaiter != <span class="hljs-keyword">null</span>) <span class="hljs-comment">// clean up if cancelled</span><br>        unlinkCancelledWaiters();<br>    <span class="hljs-keyword">if</span> (interruptMode != <span class="hljs-number">0</span>)<br>        reportInterruptAfterWait(interruptMode);<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <p><strong><code>signal()</code>流程</strong></p>
-<p><img src="/blog/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/signal.png" srcset="/blog/img/loading.gif" lazyload alt="未命名文件-4"></p>
+<p><img src="/Yoonalis/hexo.git/2022/01/27/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/signal.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="未命名文件-4"></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">void</span> <span class="hljs-title">signal</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (!isHeldExclusively())<br>        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IllegalMonitorStateException();<br>    Node first = firstWaiter;<br>    <span class="hljs-keyword">if</span> (first != <span class="hljs-keyword">null</span>)<br>        doSignal(first);<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">doSignal</span><span class="hljs-params">(Node first)</span> </span>&#123;<br>    <span class="hljs-keyword">do</span> &#123;<br>        <span class="hljs-keyword">if</span> ( (firstWaiter = first.nextWaiter) == <span class="hljs-keyword">null</span>)<br>            lastWaiter = <span class="hljs-keyword">null</span>;<br>        first.nextWaiter = <span class="hljs-keyword">null</span>;<br>    &#125; <span class="hljs-keyword">while</span> (!transferForSignal(first) &amp;&amp;<br>             (first = firstWaiter) != <span class="hljs-keyword">null</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
@@ -553,7 +553,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/blog/categories/%E5%90%8E%E7%AB%AF/">后端</a>
+                      <a class="hover-with-bg" href="/Yoonalis/hexo.git/categories/%E5%90%8E%E7%AB%AF/">后端</a>
                     
                   </div>
                 
@@ -561,7 +561,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/blog/tags/%E5%B9%B6%E5%8F%91%E3%80%81%E5%A4%9A%E7%BA%BF%E7%A8%8B%E3%80%81Java/">并发、多线程、Java</a>
+                      <a class="hover-with-bg" href="/Yoonalis/hexo.git/tags/%E5%B9%B6%E5%8F%91%E3%80%81%E5%A4%9A%E7%BA%BF%E7%A8%8B%E3%80%81Java/">并发、多线程、Java</a>
                     
                   </div>
                 
@@ -578,7 +578,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/blog/2022/01/27/Java%E5%9F%BA%E7%A1%80/">
+                      <a href="/Yoonalis/hexo.git/2022/01/27/Java%E5%9F%BA%E7%A1%80/">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">Java基础</span>
                         <span class="visible-mobile">Previous</span>
@@ -588,7 +588,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/blog/2022/01/27/Jvm/">
+                      <a href="/Yoonalis/hexo.git/2022/01/27/Jvm/">
                         <span class="hidden-mobile">JVM</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -706,18 +706,18 @@
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
 <script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/blog/js/events.js" ></script>
-<script  src="/blog/js/plugins.js" ></script>
+<script  src="/Yoonalis/hexo.git/js/events.js" ></script>
+<script  src="/Yoonalis/hexo.git/js/plugins.js" ></script>
 
 <!-- Plugins -->
 
 
-  <script  src="/blog/js/local-search.js" ></script>
+  <script  src="/Yoonalis/hexo.git/js/local-search.js" ></script>
 
 
 
   
-    <script  src="/blog/js/img-lazyload.js" ></script>
+    <script  src="/Yoonalis/hexo.git/js/img-lazyload.js" ></script>
   
 
 
@@ -772,7 +772,7 @@
 
 
 <!-- 主题的启动项 保持在最底部 -->
-<script  src="/blog/js/boot.js" ></script>
+<script  src="/Yoonalis/hexo.git/js/boot.js" ></script>
 
 
 </body>

@@ -7,32 +7,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/blog/img/favicon.png">
-  <link rel="icon" href="/blog/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/Yoonalis/hexo.git/img/favicon.png">
+  <link rel="icon" href="/Yoonalis/hexo.git/img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Cherish">
+  <meta name="author" content="Azure">
   <meta name="keywords" content="">
   
     <meta name="description" content="Redis重点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Redis">
-<meta property="og:url" content="https://cherish-merry.github.io/blog/2022/01/27/redis/index.html">
-<meta property="og:site_name" content="Cherish&#39;s blog">
+<meta property="og:url" content="https://github.com/Yoonalis/hexo.git/2022/01/27/redis/index.html">
+<meta property="og:site_name" content="Azure&#39;s blog">
 <meta property="og:description" content="Redis重点">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cherish-merry.github.io/blog/img/redis.jpeg">
+<meta property="og:image" content="https://github.com/Yoonalis/hexo.git/img/redis.jpeg">
 <meta property="article:published_time" content="2022-01-27T06:30:00.000Z">
-<meta property="article:modified_time" content="2022-04-18T07:33:25.038Z">
-<meta property="article:author" content="Cherish">
+<meta property="article:modified_time" content="2022-04-18T07:33:25.000Z">
+<meta property="article:author" content="Azure">
 <meta property="article:tag" content="Redis">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cherish-merry.github.io/blog/img/redis.jpeg">
+<meta name="twitter:image" content="https://github.com/Yoonalis/hexo.git/img/redis.jpeg">
   
   
-  <title>Redis - Cherish&#39;s blog</title>
+  <title>Redis - Azure&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -62,17 +62,17 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
 
 
-<link  rel="stylesheet" href="/blog/css/main.css" />
+<link  rel="stylesheet" href="/Yoonalis/hexo.git/css/main.css" />
 
 <!-- 自定义样式保持在最底部 -->
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"cherish-merry.github.io","root":"/blog/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml"};
+    var CONFIG = {"hostname":"github.com","root":"/Yoonalis/hexo.git/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/Yoonalis/hexo.git/local-search.xml"};
   </script>
-  <script  src="/blog/js/utils.js" ></script>
-  <script  src="/blog/js/color-schema.js" ></script>
+  <script  src="/Yoonalis/hexo.git/js/utils.js" ></script>
+  <script  src="/Yoonalis/hexo.git/js/color-schema.js" ></script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
@@ -80,7 +80,7 @@
   <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/blog/">
+    <a class="navbar-brand" href="/Yoonalis/hexo.git/">
       <strong>Cherish</strong>
     </a>
 
@@ -99,7 +99,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/">
                 <i class="iconfont icon-home-fill"></i>
                 Home
               </a>
@@ -111,7 +111,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/archives/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 Archives
               </a>
@@ -123,7 +123,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/categories/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/categories/">
                 <i class="iconfont icon-category-fill"></i>
                 Categories
               </a>
@@ -135,7 +135,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/tags/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 Tags
               </a>
@@ -147,7 +147,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/about/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/about/">
                 <i class="iconfont icon-user-fill"></i>
                 About
               </a>
@@ -159,7 +159,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/blog/links/">
+              <a class="nav-link" href="/Yoonalis/hexo.git/links/">
                 <i class="iconfont icon-link-fill"></i>
                 Links
               </a>
@@ -185,7 +185,7 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/blog/img/default.png') no-repeat center center;
+         style="background: url('/Yoonalis/hexo.git/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -262,7 +262,7 @@
 <li>hyperLogLog  基数记数</li>
 <li>bitmap      日活，月活，签到</li>
 </ul>
-<h2 id="redis-底层数据结构"><a href="#redis-底层数据结构" class="headerlink" title="redis 底层数据结构"></a>redis 底层数据结构</h2><p><img src="/blog/2022/01/27/redis/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.png" srcset="/blog/img/loading.gif" lazyload alt="image-20220415135932130"></p>
+<h2 id="redis-底层数据结构"><a href="#redis-底层数据结构" class="headerlink" title="redis 底层数据结构"></a>redis 底层数据结构</h2><p><img src="/Yoonalis/hexo.git/2022/01/27/redis/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84.png" srcset="/Yoonalis/hexo.git/img/loading.gif" lazyload alt="image-20220415135932130"></p>
 <h2 id="缓存过期策略"><a href="#缓存过期策略" class="headerlink" title="缓存过期策略"></a>缓存过期策略</h2><ul>
 <li><p><strong>noeviction</strong>:返回错误当内存限制达到并且客户端尝试执行会让更多内存被使用的命令（大部分的写入指令，但DEL和几个例外）</p>
 </li>
@@ -327,7 +327,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/blog/categories/Redis/">Redis</a>
+                      <a class="hover-with-bg" href="/Yoonalis/hexo.git/categories/Redis/">Redis</a>
                     
                   </div>
                 
@@ -335,7 +335,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/blog/tags/Redis/">Redis</a>
+                      <a class="hover-with-bg" href="/Yoonalis/hexo.git/tags/Redis/">Redis</a>
                     
                   </div>
                 
@@ -352,9 +352,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/blog/2022/01/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                      <a href="/Yoonalis/hexo.git/2022/01/27/Netty/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">操作系统</span>
+                        <span class="hidden-mobile">IO模型、Netty</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -362,8 +362,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/blog/2022/01/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
-                        <span class="hidden-mobile">计算机网络</span>
+                      <a href="/Yoonalis/hexo.git/2022/01/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">
+                        <span class="hidden-mobile">操作系统</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -480,18 +480,18 @@
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
 <script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/blog/js/events.js" ></script>
-<script  src="/blog/js/plugins.js" ></script>
+<script  src="/Yoonalis/hexo.git/js/events.js" ></script>
+<script  src="/Yoonalis/hexo.git/js/plugins.js" ></script>
 
 <!-- Plugins -->
 
 
-  <script  src="/blog/js/local-search.js" ></script>
+  <script  src="/Yoonalis/hexo.git/js/local-search.js" ></script>
 
 
 
   
-    <script  src="/blog/js/img-lazyload.js" ></script>
+    <script  src="/Yoonalis/hexo.git/js/img-lazyload.js" ></script>
   
 
 
@@ -546,7 +546,7 @@
 
 
 <!-- 主题的启动项 保持在最底部 -->
-<script  src="/blog/js/boot.js" ></script>
+<script  src="/Yoonalis/hexo.git/js/boot.js" ></script>
 
 
 </body>
